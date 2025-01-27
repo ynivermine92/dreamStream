@@ -1,0 +1,26 @@
+// ========================= [ Header styles ] =========================
+.header {
+    &__wrapper {
+        max-width: 1352px;
+        display: flex;
+        padding: 48px 0;
+    }
+
+    .heder__wrapper-log {
+        margin-left: auto;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+        background: rgb(255, 255, 255);
+        padding: 14px 21px;
+        max-width: 136px;
+        width: 100%;
+        color: #579AFF;
+        height: 51px;
+    }
+}
+
+@media (max-width: 668px) {
+    .header {
+        display: none;
+    }
+}

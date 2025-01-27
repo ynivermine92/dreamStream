@@ -1,0 +1,120 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body & Locked
+body {
+    background: #F6F7FA;
+
+    &.locked {
+        overflow: hidden;
+    }
+
+    // Dark mode styles
+    &.dark {
+        background: #242424;
+    }
+}
+
+
+.title {
+    color: rgb(48, 48, 48);
+    font-size: 56px;
+    @extend %MS-700;
+}
+
+.text {
+    color: rgb(48, 48, 48);
+    font-size: 24px;
+    @extend %MS-400;
+}
+.btn, .hotspot-modal__registr {
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px 0px rgba(88, 79, 205, 0.2);
+    background: linear-gradient(90.00deg, rgb(87, 77, 204), rgb(87, 154, 255) 100%);
+    max-width: 360px;
+    width: 100%;
+    padding: 21px 93px;
+    color: rgb(255, 255, 255);
+    font-family: Trebuchet MS;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    transition: all 0.9s;
+    &:hover{
+        transition: all 0.9s;
+        color: black;
+        background: rgba(236, 110, 173, 0.5);
+        
+    }
+}
+
+.header .heder__wrapper-log{
+    &:hover{
+        transition: all 0.9s;
+        color: black;
+        background: rgba(236, 110, 173, 0.5);
+    }
+}
+
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.modal__close{
+    position: absolute;
+    right: 0;
+    top:0;
+    cursor: pointer;
+    img{
+        height: 45px;
+        width: 45px;
+    }
+
+}
+@media (max-width:668px) {
+
+    .modal__close{
+        position: absolute;
+        right: 0;
+        top:0;
+        cursor: pointer;
+        img{
+            height: 30px;
+            width: 27px;
+    
+        }
+    
+    }
+}

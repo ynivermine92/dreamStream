@@ -1,0 +1,40 @@
+.dreamStream {
+    &__inner {
+        display: none;
+        padding-top: 53px;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        color: rgb(48, 48, 48);
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 53px;
+        padding: 0 14px;
+    }
+
+    &__text {
+        color: rgb(48, 48, 48);
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 14px;
+        padding: 0 14px;
+    }
+}
+
+
+@media (max-width: 668px) {
+    .dreamStream {
+        padding-left: 20px;
+        padding-right: 20px;
+        &__inner {
+            display: block;
+
+        }
+    }
+
+}

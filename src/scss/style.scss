@@ -1,0 +1,34 @@
+// Global SCSS-files imports
+@import './vars';
+@import './reset';
+@import './global';
+@import './fonts';
+// Sections or Pages SCSS-files imports
+@import './header';
+@import './hotspot';
+@import './dreamStream';
+@import './about';
+@import './for-what';
+@import './сollection';
+@import './communication';
+@import './dreams';
+
+@import './home';
+@import './modal';
+@import './modal2';
+@import './congratulation';
+
+
+@import './footer';
+
+// Libs
+/* @import './libs/fancybox'; */
+@import './libs/swiper';
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+

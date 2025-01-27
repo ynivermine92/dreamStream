@@ -1,0 +1,355 @@
+// ************************ Модальное окно ************************ //
+// mf
+
+
+.modal__wrapper2, .hotspot-modal__wrapper2{
+    position: fixed;
+    transition: all 0.9s;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+
+    .modal {
+        position: relative;
+        background: white;
+        padding: 56px 64px 56px 64px;
+        border-radius: 5px;
+        height: 710px;
+        width: 483px;
+
+        &__title {
+            text-align: center;
+        }
+
+
+    }
+
+
+
+
+
+    .modal__box {
+        position: relative;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px 0px rgba(38, 31, 123, 0.05);
+        background: rgb(26, 115, 232);
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: center;
+        @extend %MS-400;
+        padding: 19px 92px;
+    }
+
+    .modal__sub-text {
+        padding: 18px 0 16px 0;
+        color: rgb(135, 137, 161);
+        font-size: 18px;
+        @extend %MS-400;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .modal__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .modal__name,
+    .modal__pass {
+        margin-top: 21px;
+        /*  padding-top: px; */
+        padding-bottom: 12px;
+        color: rgb(48, 48, 48);
+        font-family: Trebuchet MS;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .modal__pass {
+        padding-top: 24px;
+    }
+
+    .modal__input {
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px 0px rgba(38, 31, 123, 0.05);
+        background: rgb(245, 247, 249);
+        max-width: 356px;
+        width: 100%;
+        height: 60px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .modal__text {
+        color: rgb(89, 91, 117);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .modal__box-box {
+        margin-top: 30px;
+        margin-bottom: 21px;
+        font-size: 18px;
+
+        @extend %MS-400;
+    }
+
+    .modal__text {
+        color: rgb(89, 91, 117);
+        font-size: 14px;
+        @extend %MS-400;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 49px;
+    }
+
+    .modal__box-inner {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 110px;
+        
+    }
+
+    .modal__btn.active {
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
+        background: rgb(88, 147, 250);
+    }
+
+    .modal__btn {
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
+        background: rgba(88, 147, 250, 0.2);
+        border: none;
+
+    }
+
+    .modal__box-wrapper {
+        width: 54px;
+        height: 54px;
+        border-radius: 7px;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 6px;
+        top: 2px;
+    }
+
+    .modal__wrapper-see {
+        cursor: pointer;
+        position: absolute;
+        width: 19.23px;
+        height: 14px;
+        right: 0;
+        bottom: 18%;
+        right: 3%;
+    }
+
+    .modal {
+        input {
+            cursor: pointer;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .modal__wrapper.active {
+        .modal__close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+
+    .modal__inner-rest {
+        display: flex;
+        gap: 2px;
+
+        .modal__gender-model {
+            cursor: pointer;
+            transition: all 0.5s;
+            height: 35px;
+            text-align: center;
+            display: block;
+            width: 175px;
+            max-width: 100%;
+            padding: 10px 37px;
+            border-radius: 10px;
+            box-shadow: inset 0px 0px 10px 0px rgba(38, 31, 123, 0.05);
+            background: rgb(245, 247, 249);
+        }
+
+        .modal__gender-model:hover {
+            color: #fff;
+            background: #5893fa;
+            transition: all 0.5s;
+        }
+
+        .modal__gender-model.active {
+            color: #fff;
+            background: #5893fa;
+            transition: all 0.5s;
+        }
+    }
+
+    .modal__rest {
+        margin-bottom: 10px;
+        display: block;
+        @extend %MS-400;
+    }
+
+    .modal__inner-rest {
+        @extend %MS-400;
+        color: #8789A1;
+    }
+
+    .modal__input {
+        @extend %MS-400;
+        color: #8789A1;
+    }
+
+    .modal__inner-wrapper {
+        display: flex;
+        padding: 18px 0;
+        align-items: center;
+    }
+
+    .checkbox {
+        border-radius: 2.9px;
+        box-shadow: inset 0px 0px 5.8px 0px rgba(38, 31, 123, 0.05);
+        background: rgb(245, 247, 249);
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal__box-text {
+        color: rgb(135, 137, 161);
+        font-family: Trebuchet MS;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        margin-left: 13px;
+    }
+}
+
+
+@media (max-width:668px) {
+    .modal__wrapper2 .modal {
+        padding: 36px;
+        width: 280px;
+        height: 415px;
+    }
+
+    .modal__wrapper2 .modal__rest {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .modal__wrapper2 .modal__inner-rest .modal__gender {
+        width: 102px;
+        font-size: 12px;
+        padding: 0;
+        width: 102px;
+        font-size: 12px;
+        margin-bottom: 6px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .modal__wrapper2 .modal__name {
+        font-size: 12px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 6px;
+    }
+
+    .modal__wrapper2 .modal__pass {
+        font-size: 12px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 6px;
+    }
+
+    .modal__wrapper2 .modal__box-text {
+        color: rgb(135, 137, 161);
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .modal__wrapper2 .modal input {
+        height: 34.78px;
+    }
+
+    .checkbox {
+        width: 17.39px !important;
+        height: 17.39px !important;
+    }
+
+    .modal__button {
+        width: 206.96px;
+        padding: 0;
+        height: 38.84px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .modal__wrapper2 .modal__box-inner {
+        padding-top: 20px;
+
+    }
+
+    .modal__wrapper2 .modal__btn {
+        width: 17.39px;
+        height: 2.9px;
+    }
+    .modal__wrapper2 .modal__btnac {
+        width: 17.39px;
+        height: 2.9px;
+    }
+    .modal__wrapper2 .modal__btn.active{
+        width: 17.39px;
+        height: 2.9px;
+    }
+}
